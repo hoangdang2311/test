@@ -48,7 +48,7 @@ def dead_reckoning(pose):
 
 def main():
     global odom_pub, previous_time, pose
-    rospy.init_node('node_odom')
+    rospy.init_node('node_odom_xxx')
     odom_pub = rospy.Publisher('/odom', Vector3, queue_size=10)
     rospy.Subscriber('/vel_pub', Twist, subscriber_vel_callback)
     # rospy.Subscriber('/imu/rpy/filtered', Vector3Stamped, subscriber_imu_callback)
